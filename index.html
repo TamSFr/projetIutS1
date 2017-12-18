@@ -1,0 +1,113 @@
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="bootstrap.min.css">
+		<script src="jquery.min.js"></script>
+		<script src="bootstrap.min.js"></script>
+		
+	</head>
+	<body>
+		<!---------------------
+		---------Menu----------
+		----------------------->
+		<div class="menu">
+			<a href="#mhome">Home</a> <a href="#mpres">Presentation</a> <a href="#minter">interview</a> <a href="#minfo">info</a> 
+		</div>
+		
+		
+		<!--------------------------------
+		---------Haut de la page----------
+		---------------------------------->
+		<div class="texteNoir"  id="mhome">			
+			<!-------------------------
+			---------Carousel----------
+			--------------------------->
+			<div id="diapo" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#diapo" data-slide-to="0" class="active"></li>
+					<li data-target="#diapo" data-slide-to="1"></li>
+					<li data-target="#diapo" data-slide-to="2"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="post" style="height : 100%; width : 100%">
+					</div>
+
+					<div class="item">
+						<h1>Site présenté par :</h1>
+						Rémi Le Brech<br>
+						Olivier Michel<br>
+						Ardrien Darnault<br>
+						Falix David
+					</div>
+
+					<div class="item">
+					essai
+					</div>
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#diapo" data-slide="prev">
+					</a>
+					<a class="right carousel-control" href="#diapo" data-slide="next">
+					</a>
+				</div>
+			</div>
+			<!-----------------------------
+			---------Fin Carousel----------
+			------------------------------->
+		</div>
+		<!------------------------------------
+		---------Fin Haut de la page----------
+		-------------------------------------->
+		
+		
+		<!-----------------------------
+		---------Presentation----------
+		------------------------------->
+		<div class="texteBlanc" id="mpres">
+			<h1 >Présentation du métier</h1>
+		</div>
+		
+		
+		<div class="texteNoir" id="minter">
+			<h1>Interview : Joris Falip</h1><iframe width="560" height="315" src="https://www.youtube.com/embed/4dSKZeAIsHY" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe><br><br>
+			<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Texte</button>
+			<div id="demo" class="collapse">
+				<div class="blocInter">
+					<div class="quest">Joris Falip, vous ête chercheur en intelligence artificielle, pouvez vous vous presenter ?</div>
+					<div class="rep">Je m appelle Joris Falip, j'ai 25ans, dans la vie j'aime les poisson, les legume, les orange, j ai le papier bulle, et pas mal d'autre truc</div>
+					<div class="quest">Joris Falip, vous ête chercheur en intelligence artificielle, pouvez vous vous presenter ?</div>
+					<div class="rep">Je m appelle Joris Falip, j'ai 25ans, dans la vie j'aime les poisson, les legume, les orange, j ai le papier bulle, et pas mal d'autre truc</div>
+					<div class="quest">Joris Falip, vous ête chercheur en intelligence artificielle, pouvez vous vous presenter ?</div>
+					<div class="rep">Je m appelle Joris Falip, j'ai 25ans, dans la vie j'aime les poisson, les legume, les orange, j ai le papier bulle, et pas mal d'autre truc</div>
+					<div class="quest">Joris Falip, vous ête chercheur en intelligence artificielle, pouvez vous vous presenter ?</div>
+					<div class="rep">Je m appelle Joris Falip, j'ai 25ans, dans la vie j'aime les poisson, les legume, les orange, j ai le papier bulle, et pas mal d'autre truc</div>
+					<div class="quest">Joris Falip, vous ête chercheur en intelligence artificielle, pouvez vous vous presenter ?</div>
+					<div class="rep">Je m appelle Joris Falip, j'ai 25ans, dans la vie j'aime les poisson, les legume, les orange, j ai le papier bulle, et pas mal d'autre truc</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="texteBlanc" id="minfo">
+			<h1>Information Supplémentaire</h1>
+			
+		</div>
+		<!--<div class="fin"></div>-->
+	</body>
+	<script>
+		$('a[href^="#m"]').click(function(){  
+	  		var id = $(this).attr("href");
+			var offset = $(id).offset().top 
+			$('html, body').animate({scrollTop: offset}, 1400); 
+			return false;  
+		}); 
+		$('.carousel').carousel({
+		  interval: 0
+		})
+	</script>
+</html>
