@@ -1,0 +1,156 @@
+	*
+	{
+		margin : 0;
+	}
+	
+	body
+	{
+		background-image : url("../img/intelligence-artificielle-684x513.jpg");
+		background-attachment: fixed;
+		background-size: cover; 
+	}
+	
+	.menu
+	{
+		display : inline-block;
+		position : fixed;
+		font-size : 1.5em;
+		height : 50px;
+		width : 100%;
+		background-color : white;	
+		color : white;
+		text-align : right;
+		padding-top : 5px;
+		z-index : 1;
+		border-bottom : 2px solid grey;
+	}
+	
+	.menu a
+	{
+		display : inline-block;
+		background-color : grey;
+		margin-right : 2%;
+		color : white;
+		padding : 0 10 0 10;
+		border-radius: 10px;
+	}
+	
+	.menu a:hover
+	{
+		font-style: italic;
+	}
+	
+	.menu + div
+	{
+		margin-top : 50px;
+	}
+	
+	div[class^="texte"]
+	{
+		display : inline-block;
+		width : 100%;
+		text-align : justify;
+		font-size : 1.2em;
+		padding : 50px 20% 20px 20%;
+	}
+	
+	div[class^="texte"] p
+	{
+		columns: 2 200px;
+		column-gap: 5em;
+		text-align : justify;
+	}
+	
+	div[class*="texteNoir"]
+	{
+		background-color : black;
+		color : white;
+	}
+	div[class*="texteGris"]
+	{
+		background-color : grey;
+		color : white;
+	}
+	div[class*="texteBlanc"]
+	{
+		background-color : white;
+		color : black;
+	}
+	div[class*="texteTrans"]
+	{
+		height : 200px;
+	}
+	div[class*="fin"]
+	{
+		display : inline-block;
+		width : 100%;
+		height : 200px;
+		margin-right : auto;
+		margin-left : auto;
+		text-align : center;
+		padding : 70px;
+		font-size : 1.5em;
+	}
+	
+	#diapo
+	{
+		margin-right : auto;
+		margin-left : auto;
+		width : 90%;
+		height : 60%;
+		border : 2px solid #424242;
+		z-index : 0;
+	}
+	div[class*="item"]
+	{
+		height : 100%;
+		width : 100%;
+	}
+	
+	.blocInter
+	{
+		margin-top : 2%;
+		margin-right : auto;
+		margin-left : auto;
+		text-align : left;
+		width : 60%;
+		height : 40%;
+		padding : 2%;
+		border : 2px solid grey;
+		overflow-y: scroll;
+	}
+	.quest 
+	{
+		font-style : italic;
+		margin-top : 2%;
+	}
+	.rep
+	{
+		margin-top : 2%;
+		text-indent:2em;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
