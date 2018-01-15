@@ -183,6 +183,7 @@
 
 }
 
+
 *
 {
 	margin : 0;
@@ -220,13 +221,20 @@ div[class*="texteBlanc"]
 	background-color : white;
 	color : black;
 }
+
 div[class*="texteTrans"]
 {
 	height : 200px;
 }
+
+iframe
+{
+	border : 4px solid black;
+}
 .quest 
 {
 	font-style : italic;
+	Font-Weight: Bold;
 	margin-top : 2%;
 }
 .rep
